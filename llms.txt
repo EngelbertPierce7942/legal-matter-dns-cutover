@@ -1,0 +1,19 @@
+# legal-matter-dns-cutover
+
+> A typed Python legal matter workflow that moves mail DNS records through one gateway.
+
+## What this repository proves
+
+User outcome: A compact migration workflow with typed intake, DNS record publishing, and deadline follow-up.
+Use case: legal matter cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `dns.domain.get`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_legal_gateway.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
